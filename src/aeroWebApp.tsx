@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import WebFont from 'webfontloader';
-import Home from './features/home/index';
+import Footer from './features/footer/index';
   
 const AeroWebApp = () => 
 {
@@ -13,7 +13,7 @@ const AeroWebApp = () =>
         });
        }, []);
     return (
-      <Home/>
+      <Footer/>
     );
 
 }
