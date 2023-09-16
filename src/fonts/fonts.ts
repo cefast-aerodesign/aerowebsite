@@ -10,7 +10,7 @@ const fonts = css`
 
 const H1 = styled.h1`
     ${fonts}
-    color: ${colors.white}
+    color: ${colors.pale_gray}
     font-size: 48px
     
 `;
