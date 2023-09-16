@@ -13,6 +13,9 @@ const Footer = () => {
           <a href='https://www.instagram.com/cefastaerodesign/' className='me-4 text-reset'>
             <MDBIcon fab icon="instagram" />
           </a>
+          <a href='https://www.facebook.com/CefastAerodesign/?locale=pt_BR' className='me-4 text-reset'>
+            <MDBIcon fab icon="facebook" />
+          </a>
           <a href='https://br.pinterest.com/caerodesign/' className='me-4 text-reset'>
             <MDBIcon fab icon="pinterest" />
           </a> 
@@ -34,8 +37,7 @@ const Footer = () => {
                 Cefast Aerodesign
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
             </MDBCol>
 
@@ -98,7 +100,11 @@ const Footer = () => {
                 cefastaerodm@gmail.com
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 55 38 99885-1968 
+                <MDBIcon icon="envelope" className='me-3'/>
+                cefastaeromkt@gmail.com
+              </p>
+              <p>
+                <MDBIcon icon="phone" className="me-3" /> + 55 31 98794-3331 
               </p>
             </MDBCol>
           </MDBRow>
