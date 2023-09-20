@@ -1,20 +1,22 @@
-import React from 'react'
-import { useEffect } from 'react'
-import WebFont from 'webfontloader';
-import Footer from './features/footer';
+import React from "react";
+import { useEffect } from "react";
+import WebFont from "webfontloader";
+import Home from "./features/home";
+import Footer from "./features/footer";
+import { Grid } from "@mui/material";
 
 const AeroWebApp = () => {
   useEffect(() => {
     WebFont.load({
       google: {
-        families: ['Rubik']
-      }
+        families: ["Rubik"],
+      },
     });
   }, []);
   return (
-    <Footer />
+        <Home />
+        // <Footer />
   );
+};
 
-}
-
-export default AeroWebApp
+export default AeroWebApp;
