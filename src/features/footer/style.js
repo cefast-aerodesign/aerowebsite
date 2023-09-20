@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import colors from '../../shared/colors'
-import  Button from "@mui/material/Button"
+import Button from "@mui/material/Button"
 
 const FooterContainer = styled.div`
     background-color: ${colors.gray_dark};
@@ -9,15 +9,19 @@ const FooterContainer = styled.div`
     height: 100%;
     margin: 0;
     color: ${colors.pale_gray};
+    .map-container{
+        text-align: end;
+    }
 `;
 
 const SeeMapButton = styled(Button)`
     color: ${colors.gray_dark};
     text-transform: capitalize;
+    min-width: 180px;
     background-color: ${colors.pale_gray};    
     .MuiButtonBase-root-MuiButton-root:hover {
         background-color: ${colors.gray_medium};    
     }
-`;  
+`;
 
-export {FooterContainer, SeeMapButton}
+export { FooterContainer, SeeMapButton }

@@ -1,4 +1,3 @@
-import './App.css';
 import AeroWebApp from './aeroWebApp'
 
 function App() {
