@@ -1,16 +1,15 @@
 import React from 'react';
-import {FooterContainer} from './style'
+import { FooterContainer, SeeMapButton} from './style'
 import  Grid from "@mui/material/Grid"
-import  Button from "@mui/material/Button"
 import { P1 } from '../../fonts/fonts';
-import cefast from './cefast.png'
+import cefast from './cefast-logo.svg'
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <Grid container direction={'row'} spacing={9}>
+      <Grid container direction="row" alignItems="center" spacing={9}>
         <Grid item xs>
-          <Grid container direction={'column'} spacing={2}>
+          <Grid container direction="column" spacing={2}>
               <Grid item xs>
                 <P1>cefastaeroadm@gmail.com</P1>
               </Grid>
@@ -39,7 +38,7 @@ const Footer = () => {
                 <P1>Av. Amazonas, 7675 - Nova Gameleira, Belo Horizonte - MG, 30510-000</P1>
               </Grid>
               <Grid item xs>
-                <Button variant='contained'>Ver no mapa</Button>
+                <SeeMapButton variant='contained'>Ver no mapa</SeeMapButton>
                 </Grid>
           </Grid>
         </Grid>
