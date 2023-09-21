@@ -3,9 +3,8 @@ import colors from '../../shared/colors'
 import Button from "@mui/material/Button"
 
 const FooterContainer = styled.div`
-    background-color: ${colors.gray_dark};
-    padding: 72px 64px; 
-    width: calc(100vw - 128px);
+    background-color: ${colors.black};
+    padding: 16px 72px; 
     height: 100%;
     margin: 0;
     color: ${colors.pale_gray};

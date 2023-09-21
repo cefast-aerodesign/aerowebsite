@@ -12,7 +12,6 @@ const H1 = styled.h1`
     ${fonts}
     color: ${colors.pale_gray};
     font-size: 48px;
-    
 `;
 
 const H2 = styled.h2`
@@ -24,6 +23,7 @@ const H2 = styled.h2`
 const H4 = styled.h4`
     ${fonts}
     font-size: 20px;
+    margin: 0;
 `;
 
 const P1 = styled.span`

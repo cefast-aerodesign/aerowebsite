@@ -11,6 +11,7 @@
     'gray_dark': '#181818',
     'blue_dark': '#00386A',
     'silver': '#D9D9D9',
+    'dark_gradient': '#1C1C1C',
 }
 
 export default colors

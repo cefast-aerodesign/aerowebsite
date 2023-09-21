@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import WebFont from "webfontloader";
 import Home from "./features/home";
 import Footer from "./features/footer";
-import { Grid } from "@mui/material";
+import Nav from "./features/nav";
 
 const AeroWebApp = () => {
   useEffect(() => {
@@ -14,8 +14,11 @@ const AeroWebApp = () => {
     });
   }, []);
   return (
+    <>
+        <Nav />
         <Home />
-        // <Footer />
+       <Footer />
+    </>
   );
 };
 
