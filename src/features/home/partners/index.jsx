@@ -1,9 +1,8 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import { PartnersSectionContainer } from "./styles";
-import { P2 } from "../../fonts";
+import { H3,H2, P2 } from "../../../fonts";
 import partnersList from "./partners.data";
-import { H2, H3 } from "../../../fonts";
 import ButtonGeneric from "../../../shared/components/button";
 
 const PartnersSection = () => (

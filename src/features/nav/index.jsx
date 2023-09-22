@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import { NavContainer } from "./styles";
-import { cefast } from "../../shared/images/logo_patrocinadores";
+import { cefast } from "../../shared/images";
 import { navList } from "../../shared/enums";
 import { P2 } from "../../fonts";
 
