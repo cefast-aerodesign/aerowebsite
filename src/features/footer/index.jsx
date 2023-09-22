@@ -1,11 +1,12 @@
 import React from 'react';
-import { FooterContainer, SeeMapButton, socialIcon } from './style'
+import { FooterContainer, SeeMapButton } from './style'
 import Grid from "@mui/material/Grid"
 import { P1 } from '../../fonts';
-import {cefast, cefet} from '../../shared/images/logo_patrocinadores'
+import {cefast, cefet} from '../../shared/images'
 import { BsInstagram, BsLinkedin, BsYoutube } from 'react-icons/bs'
 import { AiFillFacebook } from 'react-icons/ai'
-
+import { colors } from '@mui/material';
+// import { instagram, facebook, linkedin } from '../../shared/images';
 const Footer = () => {
   return (
     <FooterContainer>
@@ -22,25 +23,25 @@ const Footer = () => {
               <P1>+55 31 98794-3331</P1>
             </Grid>
             <Grid item xs>
-              <Grid container paddingRight='4px' direction="rows">
-                <Grid item xs>
+              <Grid container spacing={4} direction="rows">
+                <Grid item xs='auto'>
                   <a href="https://www.instagram.com/cefastaerodesign/" target="_blank" rel="noopener noreferrer"> 
-                    <BsInstagram />
+                    <BsInstagram color={colors.white}/>
                   </a>
                 </Grid>
-                <Grid item xs>
+                <Grid item xs='auto'>
                   <a href="https://www.facebook.com/CefastAerodesign/?locale=pt_BR" target="_blank" rel="noopener noreferrer">
-                    <AiFillFacebook />
+                    <AiFillFacebook color={colors.white}/>
                   </a>
                 </Grid>
-                <Grid item xs>
+                <Grid item xs='auto'>
                   <a href="https://br.linkedin.com/company/cefast-aerodesign" target="_blank" rel="noopener noreferrer">
-                    <BsLinkedin />
+                    <BsLinkedin color={colors.white}/>
                   </a>
                 </Grid>
-                <Grid item xs>
+                <Grid item xs='auto'>
                   <a href="https://www.youtube.com/channel/UCcaH33-qxJOOLscglBONCKg" target="_blank" rel="noopener noreferrer">
-                    <BsYoutube />
+                    <BsYoutube color={colors.white}/>
                   </a>
                 </Grid>
               </Grid>
