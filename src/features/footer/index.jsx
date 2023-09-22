@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
         </Grid>
         <Grid item xs>
-          <a href="https://www.cefetmg.br" target="_blank">
+          <a href="https://www.cefetmg.br" target="_blank" rel="noopener noreferrer">
             <img src={cefet} alt="cefet mg" width={160} height={160} />
           </a>
         </Grid>
