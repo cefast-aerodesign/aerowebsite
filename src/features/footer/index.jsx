@@ -2,13 +2,13 @@ import React from "react";
 import { FooterContainer, SeeMapButton } from "./style";
 import Grid from "@mui/material/Grid";
 import { P1 } from "../../fonts";
-import { cefast, cefet } from "../../shared/images/logo_patrocinadores";
+import { cefast, cefet } from "../../shared/images";
 import SocialNetworkIcons from "./socialNetworks";
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <Grid containe alignItems="center" spacing={9}>
+      <Grid container alignItems="center" direction="row" spacing={9}>
         <Grid item xs>
           <Grid container direction="column" spacing={2}>
             <Grid item xs>
@@ -21,7 +21,7 @@ const Footer = () => {
               <P1>+55 31 98794-3331</P1>
             </Grid>
             <Grid item xs>
-              <Grid container paddingRight="4px" direction="rows">
+              <Grid container spacing={4} direction="rows">
                 <SocialNetworkIcons />
               </Grid>
             </Grid>

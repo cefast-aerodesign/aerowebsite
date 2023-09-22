@@ -1,8 +1,8 @@
 import { Button, Grid } from "@mui/material";
 import React from "react";
 import { HeaderHomeContainer, HeaderHomeContent } from "./styles";
-import { H2, H4, P1 } from "../../fonts";
-import { bannerHeaderHome } from "../../shared/images/logo_patrocinadores";
+import { H1, H4, P1 } from "../../fonts";
+import { bannerHeaderHome } from "../../shared/images";
 
 const HeaderHome = () => {
   return (
@@ -11,8 +11,8 @@ const HeaderHome = () => {
       <HeaderHomeContent>
         <Grid container direction="column" spacing={3}>
           <Grid item>
-            <H2 className="title highlight">CEFAST </H2>
-            <H2 className="title">AERODESIGN</H2>
+            <H1 className="title highlight">CEFAST </H1>
+            <H1 className="title">AERODESIGN</H1>
           </Grid>
           <Grid item>
             <Grid container spacing={2}>

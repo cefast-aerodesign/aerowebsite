@@ -1,10 +1,9 @@
 // geral
 
-import cefet from "./geral/cefast-logo.svg";
+import cefet from "./geral/cefet-mg.svg";
 import cefast from "./geral/cefast-logo.svg";
 import bannerHeaderHome from "./geral/banner-header-home.svg";
 
-export { cefet, cefast, bannerHeaderHome }
 
 // patrocinio
 
@@ -33,12 +32,4 @@ import vfgEngenharia from './logo_patrocinadores/vfg_engenharia.svg';
 // solid
 
 
-export { leoMadeiras, LeroyMerlin, ama, benzor, citton, LeoMadeiras, LojaDosParafusos, matlab, ModeFrontier, Tmotor, copiaEarte, tekbond, vfgEngenharia };
-
-// social media
-
-import instagram from './socialmedia/insta.svg';
-import linkedin from './socialmedia/linkedin.svg';
-import facebook from './socialmedia/facebook.svg';
-
-export { instagram, facebook, linkedin }
+export {cefet, cefast, bannerHeaderHome, leoMadeiras, LeroyMerlin, ama, benzor, citton, LeoMadeiras, LojaDosParafusos, matlab, ModeFrontier, Tmotor, copiaEarte, tekbond, vfgEngenharia };
