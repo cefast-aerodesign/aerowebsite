@@ -23,4 +23,10 @@ const SeeMapButton = styled(Button)`
     }
 `;
 
-export { FooterContainer, SeeMapButton }
+const socialIcon = styled.div`
+    color: ${colors.pale_gray};
+    padding-right: 2px;
+    padding-left: 2px;
+`;
+
+export { FooterContainer, SeeMapButton, socialIcon }
