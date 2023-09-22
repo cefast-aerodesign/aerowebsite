@@ -1,8 +1,9 @@
-import { Button, Grid } from "@mui/material";
+import {  Grid } from "@mui/material";
 import React from "react";
 import { HeaderHomeContainer, HeaderHomeContent } from "./styles";
-import { H2, H4, P1 } from "../../fonts";
-import { bannerHeaderHome } from "../../shared/images/logo_patrocinadores";
+import { H1, H4, P1 } from "../../fonts";
+import { bannerHeaderHome } from "../../shared/images";
+import ButtonGeneric from "../../shared/components/button";
 
 const HeaderHome = () => {
   return (
@@ -11,8 +12,8 @@ const HeaderHome = () => {
       <HeaderHomeContent>
         <Grid container direction="column" spacing={3}>
           <Grid item>
-            <H2 className="title highlight">CEFAST </H2>
-            <H2 className="title">AERODESIGN</H2>
+            <H1 className="title highlight">CEFAST </H1>
+            <H1 className="title">AERODESIGN</H1>
           </Grid>
           <Grid item>
             <Grid container spacing={2}>
@@ -32,9 +33,9 @@ const HeaderHome = () => {
           </Grid>
           <Grid item>
             <a href="/historia">
-            <Button className="btn-know-more" variant="contained">
+            <ButtonGeneric variant="contained">
               Saiba mais
-            </Button>
+            </ButtonGeneric>
             </a>
           </Grid>
         </Grid>

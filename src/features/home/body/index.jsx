@@ -2,9 +2,10 @@ import ReactPlayer from "react-player";
 import { BodyContainer } from "./style";
 import Grid from "@mui/material/Grid/Grid";
 import { H2, H4, P1 } from "../../../fonts";
-import { Button, Skeleton } from "@mui/material";
+import { Skeleton } from "@mui/material";
 import { useEffect, useState } from "react";
 import {bodyContent} from './body.data';
+import ButtonGeneric from "../../../shared/components/button";
 
 const HomeBody = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -43,9 +44,9 @@ const HomeBody = () => {
                 </Grid>
                 <Grid item>
                   <a href="/historia">
-                    <Button className="btn-know-more" variant="contained">
+                    <ButtonGeneric variant="contained">
                       {bodyContent.buttonDescription}
-                    </Button>
+                    </ButtonGeneric>
                   </a>
                 </Grid>
               </Grid>

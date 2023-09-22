@@ -16,11 +16,6 @@ const HeaderHomeContainer = styled.div`
   .highlight {
     color: ${colors.orange_common};
   }
-  .btn-know-more {
-    width: 300px;
-    background: #fe5600;
-    margin-top: 8px;
-  }
 `;
 
 const HeaderHomeContent = styled.div`
