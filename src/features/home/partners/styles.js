@@ -3,16 +3,20 @@ import colors from "../../../shared/colors";
 
 const PartnersSectionContainer = styled.div`
   margin: 72px;
-  width: 100%;
-  background-color: ${colors.white}
-
+  background-color: ${colors.white}; 
   .primary-title {
     color: ${colors.orange_common};
   }
-  
+
   .secondary-title {
-    color: ${colors.pale_gray};
+    color: ${colors.dark_gradient};
+  }
+  .swiper-slide{
+    padding: 12px;
   }
 `;
 
-export { PartnersSectionContainer };
+const PartnerCard = styled.div`
+`;
+
+export { PartnersSectionContainer , PartnerCard};

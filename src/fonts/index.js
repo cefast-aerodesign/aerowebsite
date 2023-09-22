@@ -18,6 +18,7 @@ const H2 = styled.h2`
   ${fonts}
   font-size: 36px;
   font-weight: 500;
+  margin: 0;
 `;
 
 const H3 = styled.h4`
