@@ -1,5 +1,4 @@
 import React from "react";
-import { SocialIcon } from "./style";
 import Grid from "@mui/material/Grid";
 import { BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { AiFillFacebook } from "react-icons/ai";

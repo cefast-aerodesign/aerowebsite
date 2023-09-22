@@ -31,7 +31,7 @@ const Footer = () => {
           <img src={cefast} alt="cefast aero" width={160} height={160} />
         </Grid>
         <Grid item xs>
-          <a href="https://www.cefetmg.br" target="_blank">
+          <a href="https://www.cefetmg.br" target="_blank" rel="noopener noreferrer">
             <img src={cefet} alt="cefet mg" width={160} height={160} />
           </a>
         </Grid>
@@ -50,7 +50,7 @@ const Footer = () => {
               </P1>
             </Grid>
             <Grid item xs={12}>
-              <a href="https://www.google.com.br/maps/place/CEFET-MG+-+Campus+Nova+Gameleira/@-19.9387516,-44.0013638,766m/data=!3m2!1e3!4b1!4m6!3m5!1s0xa6973f497f73a5:0x72e85b0a73d210a1!8m2!3d-19.9387567!4d-43.9987835!16s%2Fg%2F11rdznbr_n?entry=ttu">
+              <a href="https://www.google.com.br/maps/place/CEFET-MG+-+Campus+Nova+Gameleira/@-19.9387516,-44.0013638,766m/data=!3m2!1e3!4b1!4m6!3m5!1s0xa6973f497f73a5:0x72e85b0a73d210a1!8m2!3d-19.9387567!4d-43.9987835!16s%2Fg%2F11rdznbr_n?entry=ttu" target="_blank" rel="noopener noreferrer">
                 <SeeMapButton variant="contained">Ver no mapa</SeeMapButton>
               </a>
             </Grid>
