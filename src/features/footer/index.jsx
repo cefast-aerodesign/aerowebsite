@@ -26,6 +26,18 @@ const Footer = () => {
                 <P1>{contactData.secondaryEmail}</P1>
               </a>
             </Grid>
+          </Grid>
+        </Grid>
+        <Grid item xs>
+          <div className="cefast-btn" onClick={()=> {window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}}>
+          <img src={cefast} alt="cefast aero" width={160} height={160} />
+          </div>
+        </Grid>
+        <Grid item xs>
+          <img src={cefet} alt="cefet mg" width={160} height={160} />
+        </Grid>
+        <Grid item xs>
+          <Grid container direction="column" justifyContent="flex-end" className='map-container' spacing={2}>
             <Grid item xs>
               <a className="redirect" href={'tel:' + contactData.tel}>
                 <P1>{contactData.tel}</P1>

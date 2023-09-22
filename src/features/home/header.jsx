@@ -1,8 +1,9 @@
-import { Button, Grid } from "@mui/material";
+import {  Grid } from "@mui/material";
 import React from "react";
 import { HeaderHomeContainer, HeaderHomeContent } from "./styles";
 import { H1, H4, P1 } from "../../fonts";
 import { bannerHeaderHome } from "../../shared/images";
+import ButtonGeneric from "../../shared/components/button";
 
 const HeaderHome = () => {
   return (
@@ -32,9 +33,9 @@ const HeaderHome = () => {
           </Grid>
           <Grid item>
             <a href="/historia">
-            <Button className="btn-know-more" variant="contained">
+            <ButtonGeneric variant="contained">
               Saiba mais
-            </Button>
+            </ButtonGeneric>
             </a>
           </Grid>
         </Grid>
