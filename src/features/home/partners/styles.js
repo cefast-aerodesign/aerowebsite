@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import colors from "../../../shared/colors";
 
-const ContactUsContainer = styled.div`
+const PartnersSectionContainer = styled.div`
   margin: 72px;
   width: 100%;
   background-color: ${colors.white}
@@ -15,4 +15,4 @@ const ContactUsContainer = styled.div`
   }
 `;
 
-export { ContactUsContainer };
+export { PartnersSectionContainer };

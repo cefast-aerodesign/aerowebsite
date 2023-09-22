@@ -26,20 +26,9 @@ const Footer = () => {
                 <P1>{contactData.secondaryEmail}</P1>
               </a>
             </Grid>
-          </Grid>
-        </Grid>
-        <Grid item xs>
-          <div className="cefast-btn" onClick={()=> {window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}}>
-          <img src={cefast} alt="cefast aero" width={160} height={160} />
-          </div>
-        </Grid>
-        <Grid item xs>
-          <img src={cefet} alt="cefet mg" width={160} height={160} />
-        </Grid>
-        <Grid item xs>
-          <Grid container direction="column" justifyContent="flex-end" className='map-container' spacing={2}>
+
             <Grid item xs>
-              <a className="redirect" href={'tel:' + contactData.tel}>
+              <a className="redirect" href={"tel:" + contactData.tel}>
                 <P1>{contactData.tel}</P1>
               </a>
             </Grid>
@@ -50,19 +39,33 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Grid>
+
         <Grid item xs>
-          <div className="cefast-btn" onClick={()=> {window. scrollTo({ top: 0, left: 0, behavior: 'smooth' })}}>
-          <img src={cefast} alt="cefast aero" width={160} height={160} />
-          </div>
+          <img
+            className="cefast-btn"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+            src={cefast}
+            alt="cefast aero"
+            width={160}
+            height={160}
+          />
         </Grid>
         <Grid item xs>
-          <a href="https://www.cefetmg.br" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.cefetmg.br"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={cefet} alt="cefet mg" width={160} height={160} />
           </a>
         </Grid>
         <Grid item xs>
           <a
             className="redirect"
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.google.com.br/maps/place/CEFET-MG+-+Campus+Nova+Gameleira/@-19.9387516,-44.0013638,766m/data=!3m2!1e3!4b1!4m6!3m5!1s0xa6973f497f73a5:0x72e85b0a73d210a1!8m2!3d-19.9387567!4d-43.9987835!16s%2Fg%2F11rdznbr_n?entry=ttu"
           >
             <Grid

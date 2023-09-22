@@ -1,4 +1,4 @@
-import { leoMadeiras, LeroyMerlin, ama, benzor, citton, LojaDosParafusos, matlab, ModeFrontier, Tmotor, copiaEarte, tekbond, vfgEngenharia } from '../../../shared/images/images'
+import { leoMadeiras, LeroyMerlin, ama, benzor, citton, LojaDosParafusos, matlab, ModeFrontier, Tmotor, copiaEarte, tekbond, vfgEngenharia } from '../../../shared/images'
 
 const partnersList = [
     {
