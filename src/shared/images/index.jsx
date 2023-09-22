@@ -19,6 +19,7 @@ import Tmotor from './logo_patrocinadores/tmotor.svg';
 import copiaEarte from './logo_patrocinadores/copia_e_arte.svg';
 import tekbond from './logo_patrocinadores/tekbond-logo.svg';
 import vfgEngenharia from './logo_patrocinadores/vfg_engenharia.svg';
+import solid from './logo_patrocinadores/solidworks-vector-logo.svg';
 
 // faltando: 
 
@@ -31,4 +32,4 @@ import vfgEngenharia from './logo_patrocinadores/vfg_engenharia.svg';
 // solid
 
 
-export {cefet, cefast, bannerHeaderHome, leoMadeiras, LeroyMerlin, ama, benzor, citton, LojaDosParafusos, matlab, ModeFrontier, Tmotor, copiaEarte, tekbond, vfgEngenharia };
+export {cefet, cefast, bannerHeaderHome, leoMadeiras, LeroyMerlin, ama, benzor, citton, LojaDosParafusos, matlab, ModeFrontier, Tmotor, copiaEarte, tekbond, vfgEngenharia, solid };
