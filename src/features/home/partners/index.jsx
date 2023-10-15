@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
-import { PartnersSectionContainer, PartnerCard } from "./styles";
-import { H3, H2 } from "../../../shared/fonts";
+import { PartnersSectionContainer } from "./styles";
+import { H3 } from "../../../shared/fonts";
 import partnersList from "./partners.data";
 import ButtonGeneric from "../../../shared/components/button";
 import SwiperGeneric from "../../../shared/components/swiper";
@@ -27,7 +27,7 @@ const PartnersSection = () => (
             <H3 className="primary-title">PARCEIROS</H3>
           </Grid>
           <Grid item>
-            <H2 className="secondary-title">CONHEÇA NOSSOS PARCEIROS</H2>
+            <H3 className="secondary-title">CONHEÇA NOSSOS PARCEIROS</H3>
           </Grid>
           <Grid item>
             <ButtonGeneric>Seja nosso parceiro</ButtonGeneric>

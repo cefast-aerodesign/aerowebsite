@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import colors from "../../shared/colors";
-import { Button } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 
 const ButtonGenericStyled = styled(Button)`
   height: 100%;
@@ -10,4 +10,21 @@ const ButtonGenericStyled = styled(Button)`
   margin-top: 8px;
 `;
 
-export { ButtonGenericStyled };
+const InputGenericStyled = styled(TextField)`
+  border-radius: 8px;
+
+  background: ${colors.gray_variant};
+  :focus {
+  color: ${colors.white};
+  }
+  label {
+    color: ${colors.white};
+
+  }
+  .Mui-focused{
+    color: ${colors.white} !important;
+  }
+
+`;
+
+export { ButtonGenericStyled, InputGenericStyled };

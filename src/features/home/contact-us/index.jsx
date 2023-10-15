@@ -1,29 +1,59 @@
-import { Grid } from "@mui/material";
-import React from "react";
-import { ContactUsContainer } from "./styles";
-import { cefast } from "../../shared/images";
-import { ContactUsList } from "../../shared/enums";
-import { P2 } from "../../fonts";
+import { HomeContactUsContainer } from "./styles";
+import Grid from "@mui/material/Grid/Grid";
+import ButtonGeneric from "../../../shared/components/button";
+import { H2, H4 } from "../../../shared/fonts";
+import InputGeneric from "../../../shared/components/input";
+import FormControl from "@mui/material/FormControl";
+import { inputData } from "./contact-us-data";
 
-const ContactUs = () => (
-  <ContactUsContainer>
-    <Grid container justifyContent="space-around" alignItems="center">
-      <Grid item xs={4}>
-       
-      </Grid>
-      <Grid item xs>
-        <Grid container justifyContent="center" spacing={6} alignItems="center">
-          {ContactUsList.map((item) => (
-            <Grid item xs="auto" key={item.text}>
-              <a className="ContactUs-text" href={item.link}>
-                <P2>{item.text}</P2>
+const HomeContactUs = () => {
+  return (
+    <HomeContactUsContainer>
+      <Grid
+        container
+        wrap="nowrap"
+        justifyContent={"space-around"}
+        alignItems="flex-start"
+
+      >
+        <Grid item xs={5}>
+          <Grid container direction="column" spacing={3}>
+            <Grid item>
+              <H2 className="title">ENTRE EM CONTATO COM A NOSSA EQUIPE</H2>
+            </Grid>
+            <Grid item>
+              <H4 className="subtitle">
+                Gostou do fazemos? Mande uma mensagem que entraremos em contato
+                com você!
+              </H4>
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item xs={5}>
+          <Grid container direction="column" spacing={2}>
+              {inputData.map((inputItem) => (
+                <Grid item key={inputItem.id} >
+                  <InputGeneric
+                    fullWidth
+                    id={inputItem.id}
+                    label={inputItem.label}
+                    placeholder={inputItem.placeholder}
+                    inputProps={{ maxLength: inputItem.maxChar}}
+                  />
+                </Grid>
+              ))}
+            <Grid item xs={12}>
+              <a href="/historia">
+                <ButtonGeneric fullWidth className="btn-body" variant="contained">
+                  Enviar
+                </ButtonGeneric>
               </a>
             </Grid>
-          ))}
+          </Grid>
         </Grid>
       </Grid>
-    </Grid>
-  </ContactUsContainer>
-);
+    </HomeContactUsContainer>
+  );
+};
 
-export default ContactUs;
+export default HomeContactUs;

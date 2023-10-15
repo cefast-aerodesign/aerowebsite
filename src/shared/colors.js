@@ -15,6 +15,7 @@ const colors = {
   silver: "#D9D9D9",
   dark_gradient: "#1C1C1C",
   gray_background: "#585252",
+  gray_variant: "#4F4C4C",
 };
 
 export default colors;

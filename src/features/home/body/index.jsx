@@ -1,7 +1,7 @@
 import ReactPlayer from "react-player";
 import { BodyContainer } from "./style";
 import Grid from "@mui/material/Grid/Grid";
-import { H2, P1 } from "../../../shared/fonts";
+import { H3, P1 } from "../../../shared/fonts";
 import { Skeleton } from "@mui/material";
 import { useEffect, useState } from "react";
 import { bodyContent } from "./body.data";
@@ -30,7 +30,7 @@ const HomeBody = () => {
         <Grid item>
           <Grid container direction="column" spacing={2}>
             <Grid item>
-              <H2 className="title">{bodyContent.title}</H2>
+              <H3 className="title">{bodyContent.title}</H3>
             </Grid>
             <Grid item>
               <P1>{bodyContent.description} </P1>

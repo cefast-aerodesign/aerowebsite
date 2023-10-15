@@ -5,6 +5,7 @@ import HeaderHome from "./header";
 import PartnersSection from "./partners";
 import HomeBody from "./body";
 import { HomeContainer } from "./styles";
+import HomeContactUs from "./contact-us";
 
 const AeroWebApp = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const AeroWebApp = () => {
       <HeaderHome />
       <HomeBody />
       <PartnersSection />
+      <HomeContactUs />
     </HomeContainer>
   );
 };
