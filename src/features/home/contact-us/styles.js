@@ -7,7 +7,7 @@ const ContactUsContainer = styled.div`
   background-color: ${colors.gray_dark}
 
   .primary-title {
-    color: ${colors.orange_common};
+    color: ${colors.primary_orange_common};
   }
 `;
 

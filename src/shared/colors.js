@@ -1,7 +1,8 @@
  const colors = {
+    'secondary_dark_black': '#0E0E0E',
+    'primary_orange_common': '#FE5600',
     'white': '#FFFFFF',
     'pale_orange': '#FCD2BD',
-    'orange_common': '#FE5600',
     'orange_alternative': '#FF5517',
     'orange_gradient': '#683020', 
     'black': '#000000',

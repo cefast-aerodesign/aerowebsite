@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 const ButtonGenericStyled = styled(Button)`
   height: 100%;
   min-width: 300px;
-  background: ${colors.orange_common};
+  background: ${colors.primary_orange_common};
   color: ${colors.white};
   margin-top: 8px;
 `;

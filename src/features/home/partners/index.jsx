@@ -39,12 +39,13 @@ const PartnersSection = () => (
           modules={[Pagination, Navigation, Autoplay]}
           spaceBetween={16}
           slidesPerView={3}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          
         >
           {partnersList.map((partnerItem) => (
             <SwiperSlide >
+              <a target="_blank" href={partnerItem.urlPage}>
                <img width={240} height={240} src={partnerItem.image}/>
+              </a>
             </SwiperSlide>
           ))}
         </SwiperGeneric>

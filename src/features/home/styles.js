@@ -14,7 +14,7 @@ const HeaderHomeContainer = styled.div`
     display: inline;
   }
   .highlight {
-    color: ${colors.orange_common};
+    color: ${colors.secondary_dark_black};
   }
 `;
 

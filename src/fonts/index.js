@@ -9,9 +9,10 @@ const fonts = css`
 `;
 
 const H1 = styled.h1`
-  ${fonts}
-  color: ${colors.pale_gray};
-  font-size: 48px;
+    ${fonts}
+    color: ${colors.pale_gray};
+    font-size: 90px;
+    font-weight: 900;
 `;
 
 const H2 = styled.h2`

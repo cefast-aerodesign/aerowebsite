@@ -5,7 +5,7 @@ const PartnersSectionContainer = styled.div`
   margin: 72px;
   background-color: ${colors.white}; 
   .primary-title {
-    color: ${colors.orange_common};
+    color: ${colors.primary_orange_common};
   }
 
   .secondary-title {

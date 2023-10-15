@@ -9,7 +9,7 @@ const BodyContainer = styled.div`
     display: inline;
   }
   .highlight {
-    color: ${colors.orange_common};
+    color: ${colors.primary_orange_common};
   }
 `;
 

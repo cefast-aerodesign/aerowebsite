@@ -19,7 +19,7 @@ const NavContainer = styled.div`
     display: inline;
   }
   .cefast {
-    color: ${colors.orange_common};
+    color: ${colors.primary_orange_common};
   }
 `;
 
