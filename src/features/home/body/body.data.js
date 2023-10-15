@@ -1,7 +1,5 @@
 const bodyContent = {
-    primaryTitleHighlight: 'VÍDEO',
-    primaryTitle: 'DE VÔO',
-    secondaryTitle: 'Sobre nossas aeronaves',
+    title: 'Sobre nós',
     description: `O projeto de aeronaves é uma atividade de alto custo que
     demanda investimentos. Apesar da ajuda e incentivo do
     CEFET-MG, os gastos com equipamentos, materiais e

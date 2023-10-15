@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import { PartnersSectionContainer, PartnerCard } from "./styles";
-import { H3, H2 } from "../../../fonts";
+import { H3, H2 } from "../../../shared/fonts";
 import partnersList from "./partners.data";
 import ButtonGeneric from "../../../shared/components/button";
 import SwiperGeneric from "../../../shared/components/swiper";

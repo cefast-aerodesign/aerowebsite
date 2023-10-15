@@ -1,7 +1,7 @@
 import React from "react";
 import { FooterContainer, SeeMapButton } from "./style";
 import Grid from "@mui/material/Grid";
-import { P1 } from "../../fonts";
+import { P1 } from "../../shared/fonts";
 import { cefast, cefet } from "../../shared/images";
 import SocialNetworkIcons from "./socialNetworks";
 

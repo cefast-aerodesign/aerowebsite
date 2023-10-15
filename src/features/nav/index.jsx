@@ -3,7 +3,7 @@ import React from "react";
 import { NavContainer } from "./styles";
 import { cefastTextLogo } from "../../shared/images";
 import { navList } from "../../shared/enums";
-import { P2 } from "../../fonts";
+import { P2 } from "../../shared/fonts";
 
 const Nav = () => (
   <NavContainer>
@@ -19,7 +19,7 @@ const Nav = () => (
         </a>
       </Grid>
       <Grid item xs>
-        <Grid container justifyContent="center" spacing={6} alignItems="center">
+        <Grid container justifyContent="center" spacing={8} alignItems="center">
           {navList.map((item) => (
             <Grid item xs="auto" key={item.text}>
               <a className="nav-text" href={item.link}>

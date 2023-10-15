@@ -1,8 +1,8 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import { HeaderHomeContainer, HeaderHomeContent, ButtonKnowMore } from "./styles";
-import { H1, H4, P1 } from "../../fonts";
-import { airPlaneHeaderHome, cefastVerticalText } from "../../shared/images";
+import { H1, H4, P1 } from "../../shared/fonts";
+import { airPlaneHeaderHome } from "../../shared/images";
 
 const HeaderHome = () => {
   

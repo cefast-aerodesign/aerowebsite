@@ -1,10 +1,10 @@
 import ReactPlayer from "react-player";
 import { BodyContainer } from "./style";
 import Grid from "@mui/material/Grid/Grid";
-import { H2, H4, P1 } from "../../../fonts";
+import { H2, P1 } from "../../../shared/fonts";
 import { Skeleton } from "@mui/material";
 import { useEffect, useState } from "react";
-import {bodyContent} from './body.data';
+import { bodyContent } from "./body.data";
 import ButtonGeneric from "../../../shared/components/button";
 
 const HomeBody = () => {
@@ -16,40 +16,31 @@ const HomeBody = () => {
 
   return (
     <BodyContainer>
-      <Grid container direction="column" spacing={3}>
+      <Grid container wrap="nowrap" alignItems="center" spacing={4}>
         <Grid item>
-          {bodyContent.primaryTitleHighlight && <H2 className="title highlight">{bodyContent.primaryTitleHighlight} </H2>}
-          <H2 className="title">{bodyContent.primaryTitle}</H2>
+          {isLoading ? (
+            <Skeleton variant="rectangular" width={600} height={320} />
+          ) : (
+            <ReactPlayer
+              url={bodyContent.urlVideo}
+              controls={true}
+            />
+          )}
         </Grid>
         <Grid item>
-          <Grid container alignItems="center" spacing={3}>
-            <Grid item xs>
-              {isLoading ? (
-                <Skeleton variant="rectangular" width={600} height={320} />
-              ) : (
-                <ReactPlayer
-                  url={bodyContent.urlVideo}
-                  controls={true}
-                />
-              )}
+          <Grid container direction="column" spacing={2}>
+            <Grid item>
+              <H2 className="title">{bodyContent.title}</H2>
             </Grid>
-            <Grid item xs>
-              <Grid container spacing={2}>
-                <Grid item>
-                  <H4>{bodyContent.secondaryTitle}</H4>
-                </Grid>
-                <Grid item>
-                  <P1>
-                   {bodyContent.description} </P1>
-                </Grid>
-                <Grid item>
-                  <a href="/historia">
-                    <ButtonGeneric variant="contained">
-                      {bodyContent.buttonDescription}
-                    </ButtonGeneric>
-                  </a>
-                </Grid>
-              </Grid>
+            <Grid item>
+              <P1>{bodyContent.description} </P1>
+            </Grid>
+            <Grid item xs={12}>
+              <a href="/historia">
+                <ButtonGeneric className="btn-body" variant="contained">
+                  {bodyContent.buttonDescription}
+                </ButtonGeneric>
+              </a>
             </Grid>
           </Grid>
         </Grid>
