@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import { NavContainer } from "./styles";
-import { cefast } from "../../shared/images";
+import { cefastTextLogo } from "../../shared/images";
 import { navList } from "../../shared/enums";
 import { P2 } from "../../fonts";
 
@@ -11,7 +11,7 @@ const Nav = () => (
       <Grid item xs={6}>
         <a href="/home">
           <img
-            src={cefast}
+            src={cefastTextLogo}
             width={160}
             height={60}
             alt="logo cefast aerodesign"

@@ -1,33 +1,48 @@
 import styled from "@emotion/styled";
 import colors from "../../shared/colors";
+import ButtonGeneric from "../../shared/components/button";
 
 const HeaderHomeContainer = styled.div`
-  width: 100%;
+  border-radius: 16px;
+  padding: 64px 0;
+  margin: 0 24px;
+  background: ${colors.primary_orange_common};
+  width: calc(100% - 48px);
   height: 100%;
-  min-height: 564px;
-  background-color: ${colors.gray_light};
   img {
     position: absolute;
-    width: 100%;
+    top: 24px;
+    right: 24px;
+  }
+
+  .highlight {
+    color: ${colors.secondary_dark_black};
   }
   .title {
     display: inline;
-  }
-  .highlight {
-    color: ${colors.secondary_dark_black};
   }
 `;
 
 const HeaderHomeContent = styled.div`
   color: ${colors.pale_gray};
-  position: absolute;
+  position: relative;
+  left: 6%;
   max-width: 40%;
-  top: 20%;
-  z-index: 2;
-  padding-left: 72px;
-  `;
+`;
 
 const HomeContainer = styled.div`
-`
+`;
 
-export { HeaderHomeContainer, HeaderHomeContent , HomeContainer  };
+const ButtonKnowMore = styled(ButtonGeneric)`
+  background-color: ${colors.secondary_dark_black};
+  :hover {
+    background-color: ${colors.gray_light};
+  }
+`;
+
+export {
+  HeaderHomeContainer,
+  HeaderHomeContent,
+  HomeContainer,
+  ButtonKnowMore,
+};

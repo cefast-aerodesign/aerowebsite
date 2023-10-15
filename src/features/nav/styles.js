@@ -2,11 +2,12 @@ import styled from "@emotion/styled";
 import colors from "../../shared/colors";
 
 const NavContainer = styled.div`
-  padding: 24px;
+  margin: 0 24px;
   z-index: 3;
-  position: absolute;
+  position: fixed;
   width: calc(100% - 48px);
-
+  border-radius: 16px 16px 0 0;
+  background-color: ${colors.primary_orange_common};
   .nav-text {
     color: ${colors.pale_gray};
     text-decoration: none;

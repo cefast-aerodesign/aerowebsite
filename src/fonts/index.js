@@ -13,6 +13,7 @@ const H1 = styled.h1`
     color: ${colors.pale_gray};
     font-size: 90px;
     font-weight: 900;
+    line-height: 80px;
 `;
 
 const H2 = styled.h2`

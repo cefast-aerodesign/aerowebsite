@@ -1,8 +1,10 @@
-import AeroWebApp from './aeroWebApp'
+import AeroWebApp from "./aeroWebApp";
 
 function App() {
   return (
-    <AeroWebApp/>
+    <div style={{ backgroundColor: "1C1C1C" }}>
+      <AeroWebApp />
+    </div>
   );
 }
 

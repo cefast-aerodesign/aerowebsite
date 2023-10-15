@@ -4,6 +4,12 @@ import WebFont from "webfontloader";
 import Home from "./features/home";
 import Footer from "./features/footer";
 import Nav from "./features/nav";
+import styled from "@emotion/styled";
+
+const AeroWebContainer = styled.div`
+  background-color: #1C1C1C;
+  padding-top: 24px;
+`;
 
 const AeroWebApp = () => {
   useEffect(() => {
@@ -14,11 +20,11 @@ const AeroWebApp = () => {
     });
   }, []);
   return (
-    <>
+    <AeroWebContainer>
         <Nav />
         <Home />
        <Footer />
-    </>
+    </AeroWebContainer >
   );
 };
 
