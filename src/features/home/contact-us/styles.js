@@ -5,8 +5,8 @@ const HomeContactUsContainer = styled.div`
   margin: 48px;
   padding: 36px 80px;
   border-radius: 16px;
-  background-color: #101010;
-  background: linear-gradient(220deg, #212121 13.05%, #131313 48.21%, #101010 77.78%);
+  background-color: ${colors.secondary_dark_black_variant};
+  
   .subtitle {
     color: ${colors.primary_orange_common};
   }

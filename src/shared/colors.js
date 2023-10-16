@@ -2,6 +2,7 @@ const colors = {
   primary_orange_common: "#FE5600",
   primary_orange_variant: "#FF6719",
   secondary_dark_black: "#0E0E0E",
+  secondary_dark_black_variant: "#101010",
   white: "#FFFFFF",
   pale_orange: "#FCD2BD",
   orange_alternative: "#FF5517",

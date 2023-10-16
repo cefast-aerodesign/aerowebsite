@@ -10,6 +10,7 @@ import React from "react";
 import { SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import SwiperGeneric from "../../../shared/components/swiper";
+import Carousel from 'react-material-ui-carousel'
 
 const HomeBody = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -21,17 +22,17 @@ const HomeBody = () => {
   return (
     <BodyContainer>
       <Grid container wrap="nowrap" alignItems="center" spacing={4}>
-        <Grid item>
+        <Grid item xs>
           {isLoading ? (
             <Skeleton variant="rectangular" width={600} height={320} />
           ) : (
-            <>
-                  <ReactPlayer url={bodyContent.urlVideo} controls={true} />
-                  <ReactPlayer url={bodyContent.urlVideo} controls={true} />
-            </>
+            <Carousel strictIndexing={false}>
+                  <ReactPlayer url={bodyContent.urlVideo1} controls={true} />
+                  <ReactPlayer url={bodyContent.urlVideo2} controls={true} />
+            </Carousel>
           )}
         </Grid>
-        <Grid item>
+        <Grid item xs>
           <Grid container direction="column" spacing={2}>
             <Grid item>
               <H3 className="title">{bodyContent.title}</H3>

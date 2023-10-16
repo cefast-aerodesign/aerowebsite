@@ -6,8 +6,17 @@ const ButtonGenericStyled = styled(Button)`
   height: 100%;
   min-width: 300px;
   background: ${colors.primary_orange_common};
+  :hover{
+  background: ${colors.primary_orange_variant};
+  }
+  :disabled {
+    background: ${colors.gray_medium};
+
+  }
   color: ${colors.white};
   margin-top: 8px;
+  text-transform: capitalize;
+  font-weight: 600;
 `;
 
 const InputGenericStyled = styled(TextField)`

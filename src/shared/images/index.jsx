@@ -6,6 +6,7 @@ import cefastTextLogo from "./geral/cefast-text-logo.svg";
 import bannerHeaderHome from "./geral/banner-header-home.svg";
 import cefastVerticalText from "./geral/cefast-text-vertical-header-home.svg";
 import airPlaneHeaderHome from "./geral/airplane-home-header.svg";
+import partnersTextHome from "./geral/partners-text-home.svg";
 
 // patrocinio
 
@@ -51,4 +52,5 @@ export {
   vfgEngenharia,
   cefastTextLogo,
   cefastVerticalText,
+  partnersTextHome,
 };
