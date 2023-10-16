@@ -12,19 +12,35 @@ const ButtonGenericStyled = styled(Button)`
 
 const InputGenericStyled = styled(TextField)`
   border-radius: 8px;
-
-  background: ${colors.gray_variant};
-  :focus {
-  color: ${colors.white};
+  input {
+    color: ${colors.white};
+    :focus {
+      color: ${colors.white};
+      border-color: ${colors.white}; !important
+    margin-color: ${colors.white} !important;
+      
+    }
+    
+  .Mui-focused {
+    color: ${colors.white} !important;
+    border-color: ${colors.white} !important;
+    margin-color: ${colors.white} !important;
   }
+    
+  }
+
   label {
     color: ${colors.white};
-
   }
-  .Mui-focused{
+
+  background: ${colors.gray_variant};
+
+  .Mui-focused {
     color: ${colors.white} !important;
+    border-color: ${colors.white} !important;
+    margin-color: ${colors.white} !important;
+    
   }
-
 `;
 
 export { ButtonGenericStyled, InputGenericStyled };

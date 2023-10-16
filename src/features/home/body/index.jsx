@@ -6,6 +6,10 @@ import { Skeleton } from "@mui/material";
 import { useEffect, useState } from "react";
 import { bodyContent } from "./body.data";
 import ButtonGeneric from "../../../shared/components/button";
+import React from "react";
+import { SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import SwiperGeneric from "../../../shared/components/swiper";
 
 const HomeBody = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -21,10 +25,10 @@ const HomeBody = () => {
           {isLoading ? (
             <Skeleton variant="rectangular" width={600} height={320} />
           ) : (
-            <ReactPlayer
-              url={bodyContent.urlVideo}
-              controls={true}
-            />
+            <>
+                  <ReactPlayer url={bodyContent.urlVideo} controls={true} />
+                  <ReactPlayer url={bodyContent.urlVideo} controls={true} />
+            </>
           )}
         </Grid>
         <Grid item>

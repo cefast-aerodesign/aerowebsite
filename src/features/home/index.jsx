@@ -19,7 +19,6 @@ const AeroWebApp = () => {
     <HomeContainer>
       <HeaderHome />
       <HomeBody />
-      <PartnersSection />
       <HomeContactUs />
     </HomeContainer>
   );

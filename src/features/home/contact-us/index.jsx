@@ -1,12 +1,53 @@
+import React, { useState, useEffect, useRef } from "react";
 import { HomeContactUsContainer } from "./styles";
 import Grid from "@mui/material/Grid/Grid";
 import ButtonGeneric from "../../../shared/components/button";
 import { H2, H4 } from "../../../shared/fonts";
 import InputGeneric from "../../../shared/components/input";
-import FormControl from "@mui/material/FormControl";
 import { inputData } from "./contact-us-data";
+import emailjs from "@emailjs/browser";
 
 const HomeContactUs = () => {
+  const [formListControl, setFormListControl] = useState(["", "", "", ""]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (formListControl.every((item) => !!item.value)) {
+      const templateParams = {
+        from_name: formListControl[0],
+        tel: formListControl[1],
+        email: formListControl[2],
+        message: formListControl[3],
+      };
+      emailjs
+        .send(
+          "service_ckulzci",
+          "template_wuerdkm",
+          templateParams,
+          "udtumW2BU5UEFF4NR"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setFormListControl([]);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+  };
+
+  const onChangeFormInput = (index, value) => {
+    // if(index === 2){
+    // maskTel()
+    // }
+    const copy = [...formListControl];
+    copy[index] = value;
+    setFormListControl(copy);
+  };
+
   return (
     <HomeContactUsContainer>
       <Grid
@@ -14,7 +55,6 @@ const HomeContactUs = () => {
         wrap="nowrap"
         justifyContent={"space-around"}
         alignItems="flex-start"
-
       >
         <Grid item xs={5}>
           <Grid container direction="column" spacing={3}>
@@ -31,23 +71,32 @@ const HomeContactUs = () => {
         </Grid>
         <Grid item xs={5}>
           <Grid container direction="column" spacing={2}>
-              {inputData.map((inputItem) => (
-                <Grid item key={inputItem.id} >
-                  <InputGeneric
-                    fullWidth
-                    id={inputItem.id}
-                    label={inputItem.label}
-                    placeholder={inputItem.placeholder}
-                    inputProps={{ maxLength: inputItem.maxChar}}
-                  />
-                </Grid>
-              ))}
+            {inputData.map((inputItem, index) => (
+              <Grid item key={inputItem.id}>
+                <InputGeneric
+                  fullWidth
+                  id={inputItem.id}
+                  type={inputItem.type}
+                  label={inputItem.label}
+                  placeholder={inputItem.placeholder}
+                  value={formListControl[index] || ""}
+                  inputProps={{ maxLength: inputItem.maxChar }}
+                  onChange={(ev) => onChangeFormInput(index, ev.target.value)}
+                />
+              </Grid>
+            ))}
             <Grid item xs={12}>
-              <a href="/historia">
-                <ButtonGeneric fullWidth className="btn-body" variant="contained">
-                  Enviar
-                </ButtonGeneric>
-              </a>
+              <ButtonGeneric
+                fullWidth
+                className="btn-body"
+                variant="contained"
+                onClick={handleSubmit}
+                disabled={
+                  formListControl.some((item) => !item)
+                }
+              >
+                Enviar
+              </ButtonGeneric>
             </Grid>
           </Grid>
         </Grid>
