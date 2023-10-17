@@ -8,6 +8,16 @@ const FooterContainer = styled.div`
   height: 100%;
   margin: 0;
   color: ${colors.pale_gray};
+  a {
+    :hover {
+      color: ${colors.orange_alternative};
+    }
+  }
+   .icons {
+    :hover path {
+      color: ${colors.orange_alternative};
+    }
+  }
   .map-container {
     text-align: end;
   }
@@ -15,7 +25,7 @@ const FooterContainer = styled.div`
     color: ${colors.pale_gray};
     text-decoration: none;
   }
-  .cefast-btn{
+  .cefast-btn {
     cursor: pointer;
   }
 `;
@@ -25,7 +35,7 @@ const SeeMapButton = styled(Button)`
   text-transform: capitalize;
   min-width: 180px;
   background-color: ${colors.pale_gray};
-  .MuiButtonBase-root-MuiButton-root:hover {
+  :hover {
     background-color: ${colors.gray_medium};
   }
 `;
