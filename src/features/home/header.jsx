@@ -1,26 +1,26 @@
-import {  Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import React from "react";
-import { HeaderHomeContainer, HeaderHomeContent } from "./styles";
-import { H1, H4, P1 } from "../../fonts";
-import { bannerHeaderHome } from "../../shared/images";
-import ButtonGeneric from "../../shared/components/button";
+import { HeaderHomeContainer, HeaderHomeContent, ButtonKnowMore } from "./styles";
+import { H1, H4, P1 } from "../../shared/fonts";
+import { airPlaneHeaderHome } from "../../shared/images";
 
-const HeaderHome = () => {
+const HeaderHome = ({handleRedirect}) => {
+
   return (
     <HeaderHomeContainer>
-      <img src={bannerHeaderHome} alt="b" />
+      <img src={airPlaneHeaderHome} alt="avião monoplano" />
       <HeaderHomeContent>
-        <Grid container direction="column" spacing={3}>
-          <Grid item>
+        <Grid wrap="nowrap" container direction="column" spacing={3}>
+          <Grid item xs>
             <H1 className="title highlight">CEFAST </H1>
             <H1 className="title">AERODESIGN</H1>
           </Grid>
-          <Grid item>
-            <Grid container spacing={2}>
-              <Grid item>
+          <Grid item xs>
+            <Grid container wrap="nowrap" direction="column" spacing={2}>
+              <Grid item xs>
                 <H4>Design, engenharia e qualidade no mesmo lugar</H4>
               </Grid>
-              <Grid item>
+              <Grid item xs>
                 <P1>
                   Criada em 1999 e formada por alunos das mais diversas áreas de
                   engenharia, a equipe representa o Centro Federal de Educação
@@ -31,12 +31,10 @@ const HeaderHome = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item>
-            <a href="/historia">
-            <ButtonGeneric variant="contained">
-              Saiba mais
-            </ButtonGeneric>
-            </a>
+          <Grid item xs>
+              <ButtonKnowMore onClick={handleRedirect} variant="contained">
+                Saiba mais
+              </ButtonKnowMore>
           </Grid>
         </Grid>
       </HeaderHomeContent>

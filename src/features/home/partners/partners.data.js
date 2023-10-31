@@ -73,7 +73,51 @@ const partnersList = [
         name: 'VFG ENGENHARIA',
         urlPage: 'https://vfgengenharia.com',
         image: vfgEngenharia
-    }
+    },
+    {
+        id: 14,
+        name: 'LEO MADEIRAS',
+        partnerLevel: 'gold',
+        urlPage: 'https://www.leomadeiras.com.br/',
+        image: leoMadeiras
+    },
+    {
+        id: 15, 
+        name: 'LEROY MERLIN',
+        urlPage: 'https://https://www.leroymerlin.com.br',
+        image: LeroyMerlin
+    }, 
+    {
+        id: 16, 
+        name: 'AMA',
+        urlPage: 'https://www.facebook.com/groups/167374396714850/?locale=pt_BR',
+        image: ama
+    }, 
+    {
+        id: 17, 
+        name: 'BENZOR',
+        urlPage: 'https://benzor.com.br',
+        image: benzor
+    }, 
+    {
+        id: 18, 
+        name: 'CITTON AEROMODELOS',
+        urlPage: 'https://br.linkedin.com/company/citton-aeromodelos?trk=public_profile_topcard-current-company',
+        image: citton
+    },
+    {
+        id: 19, 
+        name: 'LOJA DOS PARAFUSOS',
+        urlPage: 'https://lojapar.com.br',
+        image: LojaDosParafusos
+    },
+    {
+        id: 20, 
+        name: 'MATLAB',
+        urlPage: 'https://www.mathworks.com/products/matlab.html',
+        image: matlab
+    },
+   
 ]
 
 export default partnersList

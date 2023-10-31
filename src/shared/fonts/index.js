@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import colors from "../shared/colors";
+import colors from "../colors";
 import { css } from "@emotion/react";
 
 const fonts = css`
@@ -9,21 +9,25 @@ const fonts = css`
 `;
 
 const H1 = styled.h1`
-  ${fonts}
-  color: ${colors.pale_gray};
-  font-size: 48px;
+    ${fonts}
+    color: ${colors.pale_gray};
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 80px;
 `;
 
 const H2 = styled.h2`
   ${fonts}
-  font-size: 36px;
-  font-weight: 500;
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 48px;
 `;
 
-const H3 = styled.h4`
+const H3 = styled.h3`
   ${fonts}
-  font-weight: 400;
-  font-size: 24px;
+  font-size: 36px;
+  font-weight: 500;
   margin: 0;
 `;
 
@@ -45,4 +49,4 @@ const P2 = styled.span`
   font-weight: 400;
 `;
 
-export { H1, H2, H4, P1, P2, H3 };
+export { H1, H2, H3, H4, P1, P2 };

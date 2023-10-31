@@ -30,6 +30,7 @@ const SocialNetworkIcons = () => {
         href={socialNetworkItem.link}
         target="_blank"
         rel="noopener noreferrer"
+        className="icons"
       >
         {socialNetworkItem.icon}
       </a>

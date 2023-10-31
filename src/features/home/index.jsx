@@ -5,8 +5,9 @@ import HeaderHome from "./header";
 import PartnersSection from "./partners";
 import HomeBody from "./body";
 import { HomeContainer } from "./styles";
+import HomeContactUs from "./contact-us";
 
-const AeroWebApp = () => {
+const Home = ({ redirectTo }) => {
   useEffect(() => {
     WebFont.load({
       google: {
@@ -14,13 +15,15 @@ const AeroWebApp = () => {
       },
     });
   }, []);
+
   return (
     <HomeContainer>
-      <HeaderHome />
+      <HeaderHome handleRedirect={() => redirectTo("about-us")} />
       <HomeBody />
       <PartnersSection />
+      <HomeContactUs />
     </HomeContainer>
   );
 };
 
-export default AeroWebApp;
+export default Home;

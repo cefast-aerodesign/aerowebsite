@@ -1,11 +1,13 @@
 import ReactPlayer from "react-player";
 import { BodyContainer } from "./style";
 import Grid from "@mui/material/Grid/Grid";
-import { H2, H4, P1 } from "../../../fonts";
+import { H3, P1 } from "../../../shared/fonts";
 import { Skeleton } from "@mui/material";
 import { useEffect, useState } from "react";
-import {bodyContent} from './body.data';
+import { bodyContent } from "./body.data";
 import ButtonGeneric from "../../../shared/components/button";
+import React from "react";
+import Carousel from 'react-material-ui-carousel'
 
 const HomeBody = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -15,41 +17,32 @@ const HomeBody = () => {
   }, [setIsLoading]);
 
   return (
-    <BodyContainer>
-      <Grid container direction="column" spacing={3}>
-        <Grid item>
-          {bodyContent.primaryTitleHighlight && <H2 className="title highlight">{bodyContent.primaryTitleHighlight} </H2>}
-          <H2 className="title">{bodyContent.primaryTitle}</H2>
+    <BodyContainer id="about-us">
+      <Grid container wrap="nowrap" alignItems="center" spacing={4}>
+        <Grid item xs>
+          {isLoading ? (
+            <Skeleton variant="rectangular" width={600} height={320} />
+          ) : (
+            <Carousel strictIndexing={false}>
+                  <ReactPlayer url={bodyContent.urlVideo1} controls={true} />
+                  <ReactPlayer url={bodyContent.urlVideo2} controls={true} />
+            </Carousel>
+          )}
         </Grid>
-        <Grid item>
-          <Grid container alignItems="center" spacing={3}>
-            <Grid item xs>
-              {isLoading ? (
-                <Skeleton variant="rectangular" width={600} height={320} />
-              ) : (
-                <ReactPlayer
-                  url={bodyContent.urlVideo}
-                  controls={true}
-                />
-              )}
+        <Grid item xs>
+          <Grid container direction="column" spacing={2}>
+            <Grid item>
+              <H3 className="title">{bodyContent.title}</H3>
             </Grid>
-            <Grid item xs>
-              <Grid container spacing={2}>
-                <Grid item>
-                  <H4>{bodyContent.secondaryTitle}</H4>
-                </Grid>
-                <Grid item>
-                  <P1>
-                   {bodyContent.description} </P1>
-                </Grid>
-                <Grid item>
-                  <a href="/historia">
-                    <ButtonGeneric variant="contained">
-                      {bodyContent.buttonDescription}
-                    </ButtonGeneric>
-                  </a>
-                </Grid>
-              </Grid>
+            <Grid item>
+              <P1>{bodyContent.description} </P1>
+            </Grid>
+            <Grid item xs={12}>
+              <a href="/historia">
+                <ButtonGeneric className="btn-body" variant="contained">
+                  {bodyContent.buttonDescription}
+                </ButtonGeneric>
+              </a>
             </Grid>
           </Grid>
         </Grid>
