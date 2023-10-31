@@ -4,17 +4,8 @@ import { NavContainer } from "./styles";
 import { cefastTextLogo } from "../../shared/images";
 import { navList } from "../../shared/enums";
 import { P2 } from "../../shared/fonts";
-import { Route, Link, Routes, useLocation } from "react-router-dom";
 
-const Nav = ({ isScrolled, isDownCard, redirectTo }) => {
-  const location = useLocation();
-
-  const redirectHome = () => {
-    if (location.pathname == "/" || location.pathname == "/home") {
-      window.scrollTo(0);
-    }
-  };
-  return (
+const Nav = ({ isScrolled, isDownCard, redirectTo }) => (
     <NavContainer
       className="nav-fixed"
       $isScrolled={isScrolled}
@@ -22,7 +13,7 @@ const Nav = ({ isScrolled, isDownCard, redirectTo }) => {
     >
       <Grid container justifyContent="space-around" alignItems="center">
         <Grid item xs={6}>
-          <a onClick={redirectHome}>
+          <a onClick={()=> redirectTo('/')}>
             <img
               src={cefastTextLogo}
               width={160}
@@ -53,6 +44,6 @@ const Nav = ({ isScrolled, isDownCard, redirectTo }) => {
       </Grid>
     </NavContainer>
   );
-};
+
 
 export default Nav;
