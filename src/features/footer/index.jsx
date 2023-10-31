@@ -17,18 +17,18 @@ const Footer = () => {
         <Grid item xs>
           <Grid container direction="column" spacing={2}>
             <Grid item xs>
-              <a className="redirect" href={contactData.primaryEmail}>
+              <a className="redirect" href={'mailto:'+ contactData.secondaryEmail}>
                 <P1>{contactData.primaryEmail}</P1>
               </a>
             </Grid>
             <Grid item xs>
-              <a className="redirect" href={contactData.secondaryEmail}>
+              <a className="redirect" href={'mailto:'+ contactData.secondaryEmail}>
                 <P1>{contactData.secondaryEmail}</P1>
               </a>
             </Grid>
 
             <Grid item xs>
-              <a className="redirect" href={"tel:" + contactData.tel}>
+              <a className="redirect" target="_blank" rel="noopener noreferrer" href='https://wa.me/55319879433?text=Ol%C3%A1+equipe+do+CefastAerodesign%21'>
                 <P1>{contactData.tel}</P1>
               </a>
             </Grid>

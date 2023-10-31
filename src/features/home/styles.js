@@ -21,6 +21,8 @@ const HeaderHomeContainer = styled.div`
   .title {
     display: inline;
   }
+
+  
 `;
 
 const HeaderHomeContent = styled.div`

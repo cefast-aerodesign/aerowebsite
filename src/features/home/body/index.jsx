@@ -17,7 +17,7 @@ const HomeBody = () => {
   }, [setIsLoading]);
 
   return (
-    <BodyContainer>
+    <BodyContainer id="about-us">
       <Grid container wrap="nowrap" alignItems="center" spacing={4}>
         <Grid item xs>
           {isLoading ? (

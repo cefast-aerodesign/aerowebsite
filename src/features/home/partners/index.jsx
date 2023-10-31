@@ -6,6 +6,7 @@ import partnersList from "./partners.data";
 import ButtonGeneric from "../../../shared/components/button";
 import { partnersTextHome } from "../../../shared/images";
 import PartnerCarousel from "./partner-carousel";
+import propostaParceria from "../../../shared/documents/proposta-parceria.pdf"
 
 const PartnersSection = () => {
   const partnerSubLists = useMemo(() => {
@@ -15,7 +16,8 @@ const PartnersSection = () => {
     partnersMatrix.push(partnersList.slice(10, 15));
     partnersMatrix.push(partnersList.slice(15, 20));
     return partnersMatrix;
-  }, [partnersList]);
+  }, []);
+
   return (
     <PartnersSectionContainer>
       <img src={partnersTextHome} alt="nossos parceiros" />
@@ -43,12 +45,17 @@ const PartnersSection = () => {
               </P2>
             </Grid>
             <Grid item>
-              <ButtonGeneric>Seja nosso parceiro</ButtonGeneric>
+              <a
+                href={propostaParceria }
+                target="_blank"
+              >
+                <ButtonGeneric>Seja nosso parceiro</ButtonGeneric>
+              </a>
             </Grid>
           </Grid>
         </Grid>
         <Grid item xs="auto">
-          <Grid container spacing={2} >
+          <Grid container spacing={2}>
             {partnerSubLists?.map((partnerSublist, index) => (
               <Grid item xs="auto">
                 <PartnerCarousel

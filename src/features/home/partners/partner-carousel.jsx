@@ -18,16 +18,16 @@ const PartnerItem = ({partnerItem}) => (
 const PartnerCarousel = ({partnerSubList, index}) => {
   const PartnerListOriented =
     index % 2 === 0 ? PartnerListPositive : PartnerListNegative;
-  return (
-    <PartnerListContainer>
-      <PartnerListOriented>
+    // console.log(partnerSubList, index)
+  return(
+    <PartnerListContainer id="partners">
+      <PartnerListOriented className="partner-slide">
         {partnerSubList.map((partnerItem) => (
           <PartnerItem partnerItem={partnerItem} />
         ))}
         {partnerSubList.map((partnerItem) => (
           <PartnerItem partnerItem={partnerItem} />
         ))}
-        
       </PartnerListOriented>
     </PartnerListContainer>
   );

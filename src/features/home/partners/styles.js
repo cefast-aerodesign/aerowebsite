@@ -45,10 +45,14 @@ const PartnersSectionContainer = styled.div`
 const PartnerListContainer = styled.div`
   max-height: 280px;
   overflow: hidden;
+  position: relative  
+  :hover {
+    animation-play-state: paused;
+  }
+  
 `;
 
 const PartnerListPositive = styled.div`
-  display: inline-block;
   animation: 30s linear  0s infinite slidePositive;
   :hover {
     animation-play-state: paused;
@@ -56,16 +60,23 @@ const PartnerListPositive = styled.div`
 `;
 
 const PartnerListNegative = styled.div`
-  display: inline-block;
   animation: 30s linear 0s infinite slideNegative;
-  
-  :hover {
-    animation-play-state: paused;
-  }
-  
 `;
 
 const PartnerCard = styled(Card)`
+  :before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    background: linear-gradient();
+    content: "";
+    z-index: 4;
+
+  }
+
+
+
   white-space: nowrap;
   width: min-content;
   margin-top: 12px;

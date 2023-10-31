@@ -4,8 +4,8 @@ import { HeaderHomeContainer, HeaderHomeContent, ButtonKnowMore } from "./styles
 import { H1, H4, P1 } from "../../shared/fonts";
 import { airPlaneHeaderHome } from "../../shared/images";
 
-const HeaderHome = () => {
-  
+const HeaderHome = ({handleRedirect}) => {
+
   return (
     <HeaderHomeContainer>
       <img src={airPlaneHeaderHome} alt="avião monoplano" />
@@ -32,11 +32,9 @@ const HeaderHome = () => {
             </Grid>
           </Grid>
           <Grid item xs>
-            <a href="/historia">
-              <ButtonKnowMore variant="contained">
+              <ButtonKnowMore onClick={handleRedirect} variant="contained">
                 Saiba mais
               </ButtonKnowMore>
-            </a>
           </Grid>
         </Grid>
       </HeaderHomeContent>
