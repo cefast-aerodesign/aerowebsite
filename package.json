@@ -1,7 +1,8 @@
 {
   "name": "aeroweb",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://gitname.github.io/aerowebsite",
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
@@ -28,8 +29,7 @@
     "svgo": "^3.0.2",
     "web-vitals": "^2.1.4",
     "webfontloader": "^1.6.28",
-    "webpack": "^5.88.2",
-    "homepage" : "https//cefast-aerodesign.github.io/aerowebsite/"
+    "webpack": "^5.88.2"
   }, 
   "scripts": {
     "start": "react-scripts start",
