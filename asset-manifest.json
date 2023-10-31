@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.5c59901b.js",
+    "static/js/787.d93b4d17.chunk.js": "/static/js/787.d93b4d17.chunk.js",
+    "static/media/banner-header-home.svg": "/static/media/banner-header-home.2133d0afa502f6e846cddd525ca3c0e3.svg",
+    "static/media/proposta-parceria.pdf": "/static/media/proposta-parceria.48de1d3e429f52337bf6.pdf",
+    "static/media/partners-text-home.svg": "/static/media/partners-text-home.8b86a9a2539b967b364aeb1753fe9dbf.svg",
+    "static/media/copia_e_arte.svg": "/static/media/copia_e_arte.0d237a261e02804d7f667aaa69f9a0fa.svg",
+    "static/media/MATLAB-logo.svg": "/static/media/MATLAB-logo.9a18e9b46df59f97943ddce4989c7709.svg",
+    "static/media/cefet-mg.svg": "/static/media/cefet-mg.f9076c362cb6e181836f050dde0911d6.svg",
+    "static/media/cefast-logo.svg": "/static/media/cefast-logo.97141229709001c78fcae2c7353b65f1.svg",
+    "static/media/tekbond-logo.svg": "/static/media/tekbond-logo.37b0e8aa73bcbb9827c08b4e2864b1cc.svg",
+    "static/media/loja_dos_parafusos.svg": "/static/media/loja_dos_parafusos.cd945e340f62b7e5d84600504ced4121.svg",
+    "static/media/vfg_engenharia.svg": "/static/media/vfg_engenharia.175ebae449e49108d352521a0b6c593b.svg",
+    "static/media/AMA.svg": "/static/media/AMA.c3ccfbfd9af1b03b2e2a86aaa0db7d16.svg",
+    "static/media/Citton.svg": "/static/media/Citton.1c8a28327f3bdaa115548861d4997d42.svg",
+    "static/media/cefast-text-logo.svg": "/static/media/cefast-text-logo.3f9ce9ee74c9b1b3bf8778d30ca6bd9b.svg",
+    "static/media/cefast-text-vertical-header-home.svg": "/static/media/cefast-text-vertical-header-home.15b907d30f9de898aa2ab6f7b78af57b.svg",
+    "static/media/airplane-home-header.svg": "/static/media/airplane-home-header.424e3eff865a9c44749e196b17808b7b.svg",
+    "static/media/Leroy-Merlin-Emblema.svg": "/static/media/Leroy-Merlin-Emblema.27616c2432f44ccf410583a8e55641d3.svg",
+    "static/media/Benzor.svg": "/static/media/Benzor.1fab7b156c70c56849076b1712d3c0d2.svg",
+    "static/media/tmotor.svg": "/static/media/tmotor.4937b95d180b454f7cfab2d9358d7513.svg",
+    "static/media/modefrontier.svg": "/static/media/modefrontier.833623eb82e3c4da61274dd3c99987b9.svg",
+    "static/media/leo_leo.svg": "/static/media/leo_leo.f33e6e3556bce288eefb86d556c49384.svg",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.5c59901b.js.map": "/static/js/main.5c59901b.js.map",
+    "787.d93b4d17.chunk.js.map": "/static/js/787.d93b4d17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.5c59901b.js"
+  ]
+}
